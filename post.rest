@@ -1,0 +1,30 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDAxMjBkNzA2MTAzZGE5NjdlMWZkODAiLCJ1c2VybmFtZSI6InRlc3QiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZGF0ZSI6IjIwMjMtMDMtMDJUMjI6MTk6MDMuNjE4WiIsIl9fdiI6MCwiaWF0IjoxNjc3OTM4NTY0LCJleHAiOjE2Nzc5Mzk0NjR9.YGlPjMAZutu_2MCfSoP3OTtHdI3-N8IA-FTr2oPAWJs
+
+{
+    "title": "My post 9",
+    "content": "Content",
+    "thumbnail": "https://picsum.photos/200/300"
+}
+
+###
+GET http://localhost:3000/posts/my-post-1
+
+###
+GET http://localhost:3000/posts/ERROR
+
+###
+GET http://localhost:3000/posts/
+
+###
+DELETE http://localhost:3000/posts/
+
+###
+PATCH http://localhost:3000/posts/my-post-1
+Content-Type: application/json
+
+{
+    "title": "My post 1",
+    "content": "This is my third post"
+}

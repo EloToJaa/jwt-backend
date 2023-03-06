@@ -1,0 +1,32 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "te",
+    "email": "test@gmailcom",
+    "password": "Testowanie123",
+    "confirmPassword": "Testowanie123#"
+}
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "test2",
+    "email": "test2@gmail.com",
+    "password": "Testowanie123#",
+    "confirmPassword": "Testowanie123#"
+}
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+    
+{
+    "username": "test",
+    "password": "Testowanie123#"
+}
+
+###
+POST http://localhost:3000/auth/token
+###
+DELETE http://localhost:3000/auth/logout
