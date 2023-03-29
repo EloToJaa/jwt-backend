@@ -1,10 +1,10 @@
 import { Schema, model } from "mongoose";
 
-const TokenSchema = new Schema({
+const schema = new Schema({
 	token: {
 		type: String,
 		required: true,
 	},
 });
 
-export default model("Token", TokenSchema);
+export default model("Token", schema);

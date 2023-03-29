@@ -20,9 +20,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-jwt": "^8.4.1",
-    "isomorphic-dompurify": "^1.0.0",
     "jsonwebtoken": "^9.0.0",
-    "marked": "^4.2.12",
+    "minecraft-protocol": "^1.41.2",
     "mongoose": "^6.10.0",
     "zod": "^3.20.6"
   },

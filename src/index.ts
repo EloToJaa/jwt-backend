@@ -5,7 +5,7 @@ import express from "express";
 import mongoose from "mongoose";
 import { loadEnv } from "./env.js";
 import authRouter from "./routes/auth.js";
-import postsRouter from "./routes/posts.js";
+import mcRouter from "./routes/mc.js";
 
 const { MONGO_URI, DB_NAME, PORT } = loadEnv();
 const app: express.Express = express();
@@ -28,8 +28,8 @@ db.once("open", () => {
 	console.log("Connected to MongoDB");
 });
 
-app.use("/posts", postsRouter);
 app.use("/auth", authRouter);
+app.use("/mc", mcRouter);
 
 app.use(
 	(

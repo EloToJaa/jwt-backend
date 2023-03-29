@@ -1,19 +1,18 @@
 import { Schema, model } from "mongoose";
 
 const schema = new Schema({
-	username: {
+	port: {
+		type: Number,
+		index: true,
+	},
+	usernameOrEmail: {
 		type: String,
 		required: true,
 	},
-	password: {
+	nickname: {
 		type: String,
 		required: true,
 	},
-	email: {
-		type: String,
-		required: true,
-	},
-	date: { type: Date, default: Date.now },
 });
 
-export default model("User", schema);
+export default model("McAccount", schema);
