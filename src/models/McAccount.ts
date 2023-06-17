@@ -5,6 +5,10 @@ const schema = new Schema({
 		type: Number,
 		index: true,
 	},
+	owner: {
+		type: String,
+		required: true,
+	},
 	usernameOrEmail: {
 		type: String,
 		required: true,
